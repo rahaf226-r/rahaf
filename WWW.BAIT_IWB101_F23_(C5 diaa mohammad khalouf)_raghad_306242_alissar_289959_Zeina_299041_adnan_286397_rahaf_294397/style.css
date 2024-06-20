@@ -1,0 +1,183 @@
+body {
+    font-family: 'Segoe UI', sans-serif; /* خط أكثر نعومة */
+    font-size: 1rem;
+    line-height:1.7; /* تباعد الأسطر أكبر قليلاً للراحة */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:white;
+    text-align: center; /* محاذاة النص في المنتصف */
+  }
+ header {
+    width: 100%;
+    height: 6%;
+    background:  rgba(1, 76, 130, 0.551);
+    color: #fff; /* لون النص في الرأس */
+    display: flex;
+    justify-content:space-evenly;
+    position: fixed;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  header a {
+    color: white;
+    text-decoration: none;
+  }
+  header a:hover{
+    color:black;
+  }
+  .d0{
+    border-radius: 16px;
+    text-align: center;
+    font-size: 18px;
+  }
+  main {
+    padding: 20px;
+    min-height: 500px;
+  }
+  footer {
+    background-color:rgba(115, 112, 112, 0.435); /* متناسق مع لون التنقل */ ;
+    color:  #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+.table-home{
+  width: 75%;
+  margin: auto;
+  padding: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid   rgba(11, 72, 115, 0.993);
+  width: 100%;
+  text-align: right; /* لجعل النص يبدأ من اليمين */
+}
+
+th {
+  background-color:rgba(87, 141, 177, 0.911); /* لون خلفية الرأس أغمق لجذب الانتباه */;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center; /* لجعل النص في الخلايا في المنتصف */
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+
+/* تنسيق عناصر الإدخال */
+input, textarea, select, button {
+  font-family: 'Segoe UI', sans-serif; /* خط أكثر نعومة */;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+input[type="submit"], button {
+  background-color:  rgb(158, 195, 221) ; /* لون خلفية الرأس أغمق لجذب الانتباه */;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: rgb(80, 85, 87); /* لون تمرير الماوس فاتح ومشرق */;
+}
+
+.details {
+  text-align: right; /* لجعل تفاصيل العقار تبدأ من اليمين */
+}
+button {
+  display: block;
+  margin: 10px auto; /* لإضافة فراغ حول الزر */
+}
+.continue-button {
+  float: right; /* لوضع زر المتابعة على اليمين */
+  margin-right: 20px; /* لإضافة فراغ بين الزر والجدول */
+}
+.image-container {
+  display: flex; /* لعرض الصور بجانب بعضها البعض */
+  justify-content: center; /* لتوسيط الصور في الحاوية */
+  margin-top: 10px ;
+  margin-bottom: 10px; /* لإضافة فراغ أسفل الحاوية */
+}
+.image-container img {
+  width: 200px; /* أو العرض المطلوب */
+  margin-right: 30px; /* لإضافة فراغ بين الصور */
+}
+.image-container img:last-child {
+  margin-right: 0;
+}
+
+.container {
+  max-width: 400px; 
+  margin: 0 auto;
+}
+.h0
+{
+background-color: rgb(173, 184, 189);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.8px);
+-webkit-backdrop-filter: blur(4.8px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+height: 30px;
+ font-size: 25px;
+ align-items: center;
+ text-align: center;
+color: rgb(250, 251, 254) ;
+padding-bottom: 10px;
+margin: auto;
+}
+  .div1{
+    padding-top: 30px;
+    margin: 10px;
+    direction: rtl;
+   box-shadow: #d3a47e;
+   display: flex;
+   justify-content: space-around;}
+  
+.df{
+ display: none;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ backdrop-filter: blur(10.5px);
+ -webkit-backdrop-filter: blur(10.5px);
+
+}
+form {
+ display: block;
+ padding: 40px;
+ width: 100%;
+ height: 100%;
+ padding: 0;
+ 
+}
+.inp{
+ background: rgb(158, 195, 221);
+ height: 30px;
+ width: 500px;
+ line-height: 20px;
+ border-radius: 10px;
+ padding: 0px;
+ border: none;
+ margin-bottom: 10px;
+ }
+ label {
+   color: rgba(56, 55, 55, 0.8);
+   text-transform: uppercase;
+   font-size: 10px;
+   letter-spacing: 0px;
+   padding-left: 0px;}

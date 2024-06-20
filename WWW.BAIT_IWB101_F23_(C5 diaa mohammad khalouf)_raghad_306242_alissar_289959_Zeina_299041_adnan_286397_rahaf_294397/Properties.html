@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Properties</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="home.html">الرئيسية</a>
+      <a href="AboutUs.html">من نحن</a>
+      <a href="Properties.html">العقارات</a>
+    </header>
+    <main>
+      <h2>العقارات المتاحة</h2>
+      <table id="propertiesTable">
+        <tr>
+          <th>اختيار</th>
+          <th>إظهار التفاصيل</th>
+          <th>الإيجار الشهري</th>
+          <th>تفاصيل الإيجار</th>
+          <th>المدينة</th>
+        </tr>
+      </table>
+      <button
+        onclick="checkSelectedProperty()"
+        id="followButton"
+        class="continue-button"
+      >
+        متابعة
+      </button>
+      <div id="myForm" class="df" style="display: none">
+        <form onsubmit="validateForm()" action="post">
+          <h2>log in</h2>
+          <label for="fullName"
+            >(أحرف هجائية فقط باللغة العربية) FullName </label
+          ><br />
+          <input class="inp" type="text" id="fullName" /><br />
+          <label for="nationalId">NationalId</label><br />
+          <input
+            class="inp"
+            type="text"
+            id="nationalId"
+            required
+            title="الرجاء أدخار الرقم الوطني الصحيح المكون من 11 خانة حيث الخانتين ألى اليسار ترمزان ألى المحافظة 01-02-03-04-05-06-07-08-09-10-11-12-13-14"
+          /><br />
+          <label for="dob">Date of Birth</label><br />
+          <input class="inp" type="date" id="dob" /><br />
+          <label for="phone">Phone Number (+963 *** *** ***)</label><br />
+          <input class="inp" type="tel" id="phone" /><br />
+          <label for="email">Email</label><br />
+          <input class="inp" type="email" id="email" /><br />
+          <button type="submit">send</button>
+        </form>
+      </div>
+    </main>
+    <script src="myfunction.js"></script>
+  </body>
+</html>
